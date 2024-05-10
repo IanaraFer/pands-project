@@ -15,3 +15,7 @@ df.describe()
 
 # Checking missing values
 df.isnull().sum()
+
+# Counts the difirent species.
+
+df['species'].value_counts()
