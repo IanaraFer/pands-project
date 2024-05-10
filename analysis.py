@@ -12,3 +12,6 @@ print(df)
 
 # Describe the data set.
 df.describe()
+
+# Checking missing values
+df.isnull().sum()
