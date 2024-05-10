@@ -81,3 +81,18 @@ plt.title("Petal Width in cm")
 plt.xlabel("Petal Width (cm)")
 plt.ylabel("Count")
 plt.show()
+
+# Extract features (sepal length and sepal width)
+X = iris.data[:, :2]
+y = iris.target
+
+# Create a scatter plot
+plt.scatter(X[:, 0], X[:, 1], c=y, cmap='viridis', edgecolor='k')
+
+# Add labels and title
+plt.xlabel("Sepal Length (cm)")
+plt.ylabel("Sepal Width (cm)")
+plt.title("Iris Species Scatter Plot")
+
+# Show the plot
+plt.show()
