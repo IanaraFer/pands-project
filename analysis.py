@@ -148,3 +148,14 @@ ax.set_zlabel("3rd Eigenvector")
 ax.zaxis.set_ticklabels([])
 
 plt.show()
+
+# Load the Iris dataset
+iris = datasets.load_iris()
+
+# Access the features
+sepal_length = iris.data[:, 0]  # Sepal Length
+sepal_width = iris.data[:, 1]   # Sepal Width
+petal_length = iris.data[:, 2]  # Petal Length
+petal_width = iris.data[:, 3]   # Petal Width
+
+print(iris)
