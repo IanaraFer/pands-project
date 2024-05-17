@@ -2,7 +2,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import mpl_toolkits.mplot3d  # noqa: F401
-import seaborn as sns
 from sklearn import datasets
 from sklearn.decomposition import PCA
 
@@ -106,7 +105,8 @@ _, ax = plt.subplots()
 scatter = ax.scatter(iris.data[:, 0], iris.data[:, 1], c=iris.target)
 ax.set(xlabel=iris.feature_names[0], ylabel=iris.feature_names[1])
 _ = ax.legend(
-    scatter.legend_elements()[0], iris.target_names, loc="lower right", title="Classes")
+    scatter.legend_elements()[0], iris.target_names, loc="lower right", 
+    title="Classes")
 
 # unused but required import for doing 3d projections with matplotlib < 3.2
 
